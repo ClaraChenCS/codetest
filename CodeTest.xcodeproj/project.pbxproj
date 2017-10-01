@@ -15,6 +15,7 @@
 		03D51F6A1F80594F0054630C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03D51F681F80594F0054630C /* LaunchScreen.storyboard */; };
 		03D51F751F80594F0054630C /* CodeTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D51F741F80594F0054630C /* CodeTestTests.swift */; };
 		03D51F801F80594F0054630C /* CodeTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D51F7F1F80594F0054630C /* CodeTestUITests.swift */; };
+		03D51F931F80662D0054630C /* ReposListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D51F921F80662D0054630C /* ReposListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		03D51F7B1F80594F0054630C /* CodeTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D51F7F1F80594F0054630C /* CodeTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTestUITests.swift; sourceTree = "<group>"; };
 		03D51F811F80594F0054630C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03D51F921F80662D0054630C /* ReposListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +101,10 @@
 		03D51F5B1F80594F0054630C /* CodeTest */ = {
 			isa = PBXGroup;
 			children = (
+				03D51F8F1F8059E80054630C /* Controllers */,
+				03D51F8D1F8059C40054630C /* Views */,
 				03D51F5C1F80594F0054630C /* AppDelegate.swift */,
-				03D51F5E1F80594F0054630C /* ViewController.swift */,
-				03D51F601F80594F0054630C /* Main.storyboard */,
 				03D51F661F80594F0054630C /* Assets.xcassets */,
-				03D51F681F80594F0054630C /* LaunchScreen.storyboard */,
 				03D51F6B1F80594F0054630C /* Info.plist */,
 				03D51F631F80594F0054630C /* CodeTest.xcdatamodeld */,
 			);
@@ -126,6 +127,24 @@
 				03D51F811F80594F0054630C /* Info.plist */,
 			);
 			path = CodeTestUITests;
+			sourceTree = "<group>";
+		};
+		03D51F8D1F8059C40054630C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03D51F601F80594F0054630C /* Main.storyboard */,
+				03D51F681F80594F0054630C /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		03D51F8F1F8059E80054630C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				03D51F5E1F80594F0054630C /* ViewController.swift */,
+				03D51F921F80662D0054630C /* ReposListViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D51F931F80662D0054630C /* ReposListViewController.swift in Sources */,
 				03D51F5F1F80594F0054630C /* ViewController.swift in Sources */,
 				03D51F651F80594F0054630C /* CodeTest.xcdatamodeld in Sources */,
 				03D51F5D1F80594F0054630C /* AppDelegate.swift in Sources */,
@@ -431,7 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35Z4BM764N;
+				DEVELOPMENT_TEAM = UHCFQX8VT7;
 				INFOPLIST_FILE = CodeTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clarachen.CodeTest;
@@ -446,7 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 35Z4BM764N;
+				DEVELOPMENT_TEAM = UHCFQX8VT7;
 				INFOPLIST_FILE = CodeTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.clarachen.CodeTest;
