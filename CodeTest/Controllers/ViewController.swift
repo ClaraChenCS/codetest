@@ -27,20 +27,27 @@ class ViewController: UIViewController {
         if(githubUsername.text?.isEmpty)!{
             print("username is required. Please enter username");
         }
-        var username = githubUsername.text;
-        urlString = urlString + "/users/:"+username!+"repos";
-        let url = URL(fileURLWithPath: urlString)
-        var request = URLRequest(url: url)
-        request.httpMethod = "GET"
+        else{
+
+            var username = githubUsername.text;
+            
+            urlString = urlString + "users/:"+username!+"/repos";
+            let url = URL(fileURLWithPath: urlString)
+            var request = URLRequest(url: url)
+            request.httpMethod = "GET"
+            
+            let session = URLSession.shared
+            
+            print("Github Api call" + urlString)
+            print("Github Username to lookup"+username!)
+            
+            session.dataTask(with: url, completionHandler: {(data, response, error) in
+                
+                print ("Response data \(String(describing: data))")
+                print("Response response \(String(describing: response))")
+            })
+        }
         
-        let session = URLSession.shared
-        
-        session.dataTask(with: url, completionHandler: {(data, response, error) in
-           
-            let reposJson = data
-            print (reposJson)
-            print(response)
-        })
     }
     
 }
